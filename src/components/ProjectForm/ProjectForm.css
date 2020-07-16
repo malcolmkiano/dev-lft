@@ -1,0 +1,37 @@
+.project-form {
+  width: 100%;
+  margin: 0;
+  max-width: initial;
+}
+
+.project-form .project {
+  margin-bottom: 0;
+}
+
+.project-form .name-input {
+  margin-bottom: 0.5rem;
+}
+
+.project-form .project-right .input-group {
+  width: 100%;
+}
+
+.project-form .error {
+  margin-bottom: 0.5rem;
+}
+
+.project-form .btn {
+  margin-right: 1rem;
+  margin-bottom: 0;
+  transform: none;
+  box-shadow: none;
+}
+
+.project-form .tag:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.project-form .tag-error {
+  margin-bottom: 1rem;
+}

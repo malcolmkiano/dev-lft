@@ -1,0 +1,8 @@
+.chat-form {
+  padding: 0 1rem;
+}
+
+.chat-form .input-group .btn {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}

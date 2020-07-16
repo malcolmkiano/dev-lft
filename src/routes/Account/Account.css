@@ -1,0 +1,32 @@
+.account {
+  font-size: 1rem;
+  width: 100%;
+  max-width: initial;
+}
+
+.account .card {
+  font-size: 1.2rem;
+}
+
+.account .btn {
+  margin: 0;
+}
+
+.account .tag {
+  cursor: pointer;
+}
+
+.account .tag.tag-grey:hover {
+  background: var(--colorFG);
+}
+
+.account .profile-link .btn {
+  font-size: 1rem;
+  padding: 0;
+  background: none;
+  margin-bottom: 0.5rem;
+}
+
+.account .profile-link .btn:hover {
+  color: var(--colorAccent);
+}

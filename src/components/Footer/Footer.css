@@ -1,0 +1,52 @@
+footer .wrapper {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  background: var(--colorBG);
+}
+
+footer h2,
+footer p {
+  margin: 0;
+  line-height: 1.2;
+}
+
+footer .logo svg {
+  height: 4rem;
+  width: 4rem;
+}
+
+footer p.version {
+  color: var(--colorMidFG);
+  text-align: right;
+}
+
+footer .links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+footer .links li {
+  margin-left: 1rem;
+}
+
+footer .links a::after {
+  display: none;
+}
+
+footer .links svg {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--colorMidFG);
+  transition: all 0.2s ease;
+}
+
+footer .links svg:hover {
+  fill: var(--colorAccent);
+}

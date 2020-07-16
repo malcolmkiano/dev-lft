@@ -1,0 +1,112 @@
+.btn {
+  background: var(--colorAccent);
+  color: var(--colorBG);
+  display: inline-block;
+  text-transform: uppercase;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.5em 1em;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+  box-shadow: 0 0.5rem 1rem transparent;
+  transition: all 0.2s ease 0.1s, opacity 0.2s ease 0s;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--colorFG);
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  text-decoration: none;
+  transform: translateY(-0.2em);
+  box-shadow: 0 0.5rem 1rem var(--colorMidBG);
+}
+
+.btn:hover::after {
+  transform: translateX(0);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.btn:active {
+  transition: all 0.2s ease;
+  transform: none;
+}
+
+/* icons */
+.btn svg {
+  display: block;
+  height: 1em;
+}
+
+/* clear buttons */
+.btn-clear {
+  background: transparent;
+  color: var(--colorMidFG);
+}
+
+.btn-clear::before,
+.btn-clear::after {
+  display: none;
+}
+
+.btn-clear:hover {
+  box-shadow: none;
+  transform: none;
+  background: var(--colorDarkBG);
+  color: var(--colorFG);
+}
+
+/* disabled buttons */
+.btn:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* swap elements */
+.btn .swap {
+  height: 100%;
+}
+
+.btn.has-swap .content {
+  display: none;
+}
+
+.btn.has-swap {
+  height: 3em;
+  width: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 680px) {
+  .btn .swap {
+    display: none;
+  }
+
+  .btn.has-swap .content {
+    display: block;
+  }
+
+  .btn.has-swap {
+    display: inline-block;
+    height: auto;
+    width: auto;
+  }
+}
